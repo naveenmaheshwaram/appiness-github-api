@@ -1,0 +1,21 @@
+<div class="jumbotron text-center">
+  <h1>GitHub Search Portal</h1>
+  <p>- appiness all around</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12" *ngIf="!isRepositoryView">
+        <div class="active-cyan-3 active-cyan-4 mb-4">
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search" [(ngModel)]="filterUser">
+        </div>
+      <app-users-list [usersList]="usersList" (selectedUser)="getResposityData($event)" [filterUser]="filterUser"></app-users-list>
+    </div>
+    <div class="col-12" *ngIf="isRepositoryView">
+      <a href="#" class="badge badge-warning" (click)="showUsersView()">Back to users list</a>
+      <app-user-repositories [repositoryData]="repositoryData" [user]="selectedUserData"></app-user-repositories>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
