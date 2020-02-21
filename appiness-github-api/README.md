@@ -24,11 +24,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 # Sreenshots for application
 ## Users List View
-
+![](images/Capture1.PNG)
 ## Selected User Repository View
-
+![](images/Capture2.PNG)
 ## Users List View with search filter
-
+![](images/Capture3.PNG)
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
